@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ziyan Nəşriyyatı</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:white;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:#c40000;
+color:white;
+padding:30px;
+text-align:center;
+animation:fadeIn 2s;
+}
+
+nav{
+background:#900000;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+font-size:18px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffcccc;
+}
+
+/* HERO */
+
+.hero{
+padding:80px;
+text-align:center;
+background:linear-gradient(#ff0000,#ffffff);
+color:#fff;
+}
+
+.hero h1{
+font-size:50px;
+animation:slide 2s;
+}
+
+.hero p{
+font-size:20px;
+}
+
+/* SERVICES */
+
+.services{
+padding:50px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:250px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.1);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:50px;
+text-align:center;
+}
+
+.gallery img{
+width:200px;
+margin:10px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.2);
+}
+
+/* FORM */
+
+.order{
+background:#f4f4f4;
+padding:50px;
+text-align:center;
+}
+
+input,textarea{
+width:80%;
+padding:12px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+background:#c40000;
+color:white;
+padding:15px 30px;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff0000;
+}
+
+/* FOOTER */
+
+footer{
+background:#900000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{opacity:0}
+to{opacity:1}
+}
+
+@keyframes slide{
+from{transform:translateY(-50px);opacity:0}
+to{transform:translateY(0);opacity:1}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ziyan Nəşriyyatı</h1>
+<p>Kitab Dizaynı və Çap Xidmətləri</p>
+</header>
+
+<nav>
+<a href="#">Ana səhifə</a>
+<a href="#services">Xidmətlər</a>
+<a href="#gallery">Nümunələr</a>
+<a href="#order">Sifariş</a>
+</nav>
+
+<section class="hero">
+<h1>Kitabını Bizimlə Çap Et</h1>
+<p>Professional dizayn və keyfiyyətli çap</p>
+</section>
+
+<section id="services" class="services">
+
+<div class="card">
+<h3>Kitab Dizaynı</h3>
+<p>Kitab səhifələrinin professional hazırlanması</p>
+</div>
+
+<div class="card">
+<h3>Üz Qabığı</h3>
+<p>Kreativ kitab üz qabığı dizaynı</p>
+</div>
+
+<div class="card">
+<h3>Çap Xidməti</h3>
+<p>Yüksək keyfiyyətli kitab çapı</p>
+</div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>Nümunə İşlər</h2>
+
+<img src="https://picsum.photos/200/300?1">
+<img src="https://picsum.photos/200/300?2">
+<img src="https://picsum.photos/200/300?3">
+
+</section>
+
+<section id="order" class="order">
+
+<h2>Sifariş Ver</h2>
+
+<form>
+
+<input type="text" placeholder="Adınız" required>
+
+<input type="tel" placeholder="Telefon">
+
+<textarea placeholder="Kitab haqqında məlumat"></textarea>
+
+<button type="submit">Sifariş göndər</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ziyan Nəşriyyatı</p>
+
+</footer>
+
+</body>
+</html>
